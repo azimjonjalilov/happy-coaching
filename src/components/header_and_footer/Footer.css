@@ -1,0 +1,235 @@
+/* Asosiy konteyner */
+.footer-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcfbfa;
+    color: #2b3655;
+    padding: 40px 80px 20px 80px;
+}
+
+/* Newsletter qismi */
+.newsletter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.newsletter-text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: #1e2640;
+}
+
+.newsletter-text p {
+    font-size: 15px;
+    color: #636e85;
+    margin: 0;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 12px;
+}
+
+.newsletter-form input {
+    padding: 12px 16px;
+    font-size: 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    width: 260px;
+    outline: none;
+}
+
+.newsletter-form button {
+    background-color: #1cb09a;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #169280;
+}
+
+/* Ajratuvchi Chiziq */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #eef0f4;
+    margin: 0;
+}
+
+/* O'rta qism linklari */
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding: 50px 0;
+}
+
+.brand-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #1e2640;
+    margin-bottom: 16px;
+}
+
+/* --- ASOSIY LOGO PLACEHOLDER --- */
+.brand-logo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    /* Istalgan o'lchamga o'zgartiring */
+    height: 32px;
+    /* Istalgan o'lchamga o'zgartiring */
+    background-color: #1cb09a;
+    border-radius: 6px;
+    font-size: 8px;
+    /* Ichidagi vaqtinchalik matn uchun */
+    color: #fff;
+    overflow: hidden;
+}
+
+.brand-logo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brand-desc {
+    font-size: 14px;
+    color: #a0aabf;
+    max-width: 280px;
+    line-height: 1.5;
+}
+
+.footer-links-group h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e2640;
+    margin: 0 0 16px 0;
+}
+
+.footer-links-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-group ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links-group ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #8c97ac;
+    transition: color 0.2s ease;
+}
+
+.footer-links-group ul li a:hover {
+    color: #1cb09a;
+}
+
+/* Pastki qism */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.footer-madeby {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: #1e2640;
+}
+
+/* --- MADE BY EMOJI/LOGO PLACEHOLDER --- */
+.madeby-icon-placeholder {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+}
+
+.madeby-icon-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+
+/* --- SOCIAL ICON PLACEHOLDER --- */
+.social-icon-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #8c97ac;
+    font-size: 16px;
+    width: 24px;
+    /* Ikonkalar uchun standart kenglik */
+    height: 24px;
+    /* Ikonkalar uchun standart balandlik */
+    transition: color 0.2s ease;
+}
+
+.social-icon-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.social-icon-placeholder:hover {
+    color: #1e2640;
+}
+
+/* Responsive (Mobil moslashuvchanlik) */
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .newsletter-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .newsletter-form {
+        width: 100%;
+    }
+
+    .newsletter-form input {
+        flex: 1;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+}
